@@ -31,17 +31,21 @@ function App() {
       Euro:FormEuro.toFixed(2),
       Dolar:FormDolar.toFixed(2)
     })
-    if( FormEuro){
-      setDolar(Number(informacoes?.Euro))
+    if( euro >0){
+     setDolar( Number(euro))
       toast.success("Euro convertido com sucesso")
-    }else if(FormDolar){
-      setEuro(Number(informacoes?.Dolar))
+      
+    
+    }else if(dolar >0){
+      setEuro(dolar)
       toast.success("Dolar convertido com sucesso")
     }else{toast.warn("Precisa digitar algum valor")
       
     }
+    setInfo
     
   }
+  
   
   
   
@@ -57,7 +61,7 @@ function App() {
 <input className='input' 
 type="number"
 placeholder='Write one value'
-min="1"
+
 step="0.01"
 value={euro}
 onChange={(e)=> setEuro(Number(e.target.value))} />
@@ -68,7 +72,7 @@ onChange={(e)=> setEuro(Number(e.target.value))} />
 <input className='input' 
  type="number"
  placeholder='Write one value'
- min="1"
+ 
  step="0.01"
  value={dolar}
  onChange={(e)=> setDolar(Number(e.target.value))} />
