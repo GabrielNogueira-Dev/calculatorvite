@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+background-color: rgb(179, 174, 174);
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo{
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center; 
+  border-radius: 80px;
+  height: 165px;
+ 
+}
+.title{
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.formulary{
+  font-family: sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  
+  transition: 0.3s;
+}
+.text:hover{
+  padding: 4px 4px;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(53, 82, 25);
+transform:scale(1.1);
+}
+button{
+  width: 100%;
+  height: 45px;
+  background-color:  #119cea;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-size:  20px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: 0.5S;
+}
+button:hover{
+  transform: scale(1.05);
+}
+
+section{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+ 
+}
